@@ -1,21 +1,17 @@
 body {
-    margin: 0;
-    background-color: #fdfaf5;
-    font-family: 'Georgia', serif;
+  margin: 0;
+  background-color: #fdfaf5;
+  font-family: 'Georgia', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   }
   
-  .container {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  img {
-    max-width: 90vw;
-    height: auto;
+  .container img {
+    width: 1152px;
+    height: 768px;
+    display: block;
     border: 2px solid #e0ddd7;
     border-radius: 10px;
   }
-  
