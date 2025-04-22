@@ -1,10 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>fun</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fun | Valerie's Study</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .wheel-wrapper {
+      text-align: center;
+      padding: 60px;
+    }
+
+    .wheel-btn {
+      font-size: 1.2em;
+      padding: 14px 28px;
+      background-color: #dfd4c7;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .wheel-btn:hover {
+      background-color: #c9bbaf;
+    }
+
+    .book-result {
+      margin-top: 30px;
+      font-size: 1.4em;
+      font-style: italic;
+      color: #5a4a42;
+      min-height: 2em;
+      transition: opacity 0.3s ease;
+    }
+  </style>
 </head>
 <body>
-  <h1>fun</h1>
-  <p>coming soon!</p>
+  <div class="page-wrapper wheel-wrapper">
+    <h1>😼 Spin the Wheel</h1>
+    <p>Click below to get a book recommendation from my current reading list:</p>
+
+    <button class="wheel-btn" onclick="spinWheel()">🎡 Spin</button>
+
+    <div class="book-result" id="bookResult"></div>
+
+    <a href="index.html">← Back to home</a>
+  </div>
+
+  <script>
+    const books = [
+      "📖 *Killing Commendatore* by Haruki Murakami",
+      "🧠 *The Body Keeps the Score* by Bessel van der Kolk",
+      "🔥 *Onyx Storm* by Rebecca Yarros",
+      "🍀 *Dubliners* by James Joyce",
+      "🌊 *The Bell Jar* by Sylvia Plath",
+      "📚 *More Days at the Morisaki Bookshop* by Satoshi Yagisawa",
+      "💮 *The Henna Artist* by Alka Joshi"
+    ];
+
+    let interval;
+
+    function spinWheel() {
+      const resultEl = document.getElementById("bookResult");
+      let count = 0;
+
+      clearInterval(interval);
+      resultEl.style.opacity = 0.5;
+
+      interval = setInterval(() => {
+        const randomIndex = Math.floor(Math.random() * books.length);
+        resultEl.innerHTML = books[randomIndex];
+        count++;
+
+        if (count > 15) {
+          clearInterval(interval);
+          resultEl.style.opacity = 1;
+        }
+      }, 100);
+    }
+  </script>
 </body>
 </html>

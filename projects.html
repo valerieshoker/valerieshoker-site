@@ -1,10 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Projects</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Valerie's Study</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .projects-wrapper {
+      max-width: 750px;
+      margin: 80px auto;
+      padding: 40px;
+      background-color: #fffdf8;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      font-family: 'Georgia', serif;
+      line-height: 1.6;
+    }
+
+    .projects-wrapper h1 {
+      font-size: 2.5em;
+    }
+
+    .project {
+      margin-bottom: 24px;
+    }
+
+    .project-title {
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    .github-link {
+      display: inline-block;
+      margin-top: 40px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #444;
+    }
+
+    .github-link:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <h1>Projects</h1>
-  <p>this is where my coding projects will live</p>
+  <div class="projects-wrapper">
+    <h1>🛠️ My Projects</h1>
+
+    <div class="project">
+      <p class="project-title">🗺️ imatge-dore</p>
+      <p>A policy transparency project for visualizing local political candidates' stances in one concise interface.</p>
+    </div>
+
+    <div class="project">
+      <p class="project-title">⏳ Moku Noru (Chrome Extension)</p>
+      <p>A minimal focus toolkit: blocks distractions, tracks tasks, and encourages better digital habits with a to-do system and optional reflection prompts.</p>
+    </div>
+
+    <div class="project">
+      <p class="project-title">🌍 nan-sans-femme</p>
+      <p>An interactive language-learning site starting with French — includes core vocabulary, audio, examples, and a structured review interface. Inspired by literary language journeys.</p>
+    </div>
+
+    <a class="github-link" href="https://github.com/valerieshoker" target="_blank">→ View all on GitHub</a>
+
+    <br><br>
+    <a href="index.html">← Back to home</a>
+  </div>
 </body>
 </html>
