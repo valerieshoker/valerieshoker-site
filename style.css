@@ -19,3 +19,12 @@ body {
   border: 2px solid #e0ddd7;
   border-radius: 10px;
 }
+.hotspot {
+  transition: all 0.2s ease;
+}
+
+.hotspot:hover {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.05); /* subtle glow */
+  cursor: pointer;
+}
