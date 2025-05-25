@@ -6,75 +6,11 @@
   <title>Valerie's Study</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="Homepage">
   <div class="container">
     <img src="images/living-room.png" usemap="#object-map" alt="Homepage Map" />
     <div id="hotspots"></div>
-
-  
-
- <!--
-  <map name="object-map">
-    <area shape="rect" coords="200,160,460,610" href="/projects.html" alt="Projects" />
-    <area shape="circle" coords="650,185,74" href="/about.html" alt="About" />
-    <area shape="circle" coords="825,355,76" href="/travel.html" alt="Travel" />
-    <area shape="rect" coords="650,430,750,500" href="https://substack.com/@valerieshoker?utm_source=user-menu" target="_blank" alt="Blog" />
-    <area shape="rect" coords="530,415,580,480" href="/contact.html" alt="Contact" />
-    <area shape="rect" coords="750,600,950,680" href="/fun.html" alt="Cat Zone" />
-  </map>
--->
-
   </div> 
-
-  <!--
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const map = document.querySelector("map[name='object-map']");
-      const img = document.querySelector("img[usemap='#object-map']");
-      const container = document.querySelector(".container");
-
-      const debugOverlay = document.createElement("div");
-      debugOverlay.style.position = "absolute";
-      debugOverlay.style.top = img.offsetTop + "px";
-      debugOverlay.style.left = img.offsetLeft + "px";
-      debugOverlay.style.width = img.offsetWidth + "px";
-      debugOverlay.style.height = img.offsetHeight + "px";
-      debugOverlay.style.pointerEvents = "none";
-      container.style.position = "relative";
-      container.appendChild(debugOverlay);
-
-      const createOutline = (coords, shape) => {
-        const overlay = document.createElement("div");
-        overlay.style.position = "absolute";
-        overlay.style.border = "2px dashed red";
-        overlay.style.pointerEvents = "none";
-
-        if (shape === "rect") {
-          const [x1, y1, x2, y2] = coords.map(Number);
-          overlay.style.left = x1 + "px";
-          overlay.style.top = y1 + "px";
-          overlay.style.width = x2 - x1 + "px";
-          overlay.style.height = y2 - y1 + "px";
-        } else if (shape === "circle") {
-          const [cx, cy, r] = coords.map(Number);
-          overlay.style.left = cx - r + "px";
-          overlay.style.top = cy - r + "px";
-          overlay.style.width = r * 2 + "px";
-          overlay.style.height = r * 2 + "px";
-          overlay.style.borderRadius = "50%";
-        }
-
-        debugOverlay.appendChild(overlay);
-      };
-
-      map.querySelectorAll("area").forEach((area) => {
-        const shape = area.getAttribute("shape");
-        const coords = area.getAttribute("coords").split(",");
-        createOutline(coords, shape);
-      });
-    });
-  </script>
--->
 
 <script>
   const hotspots = [
