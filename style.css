@@ -23,15 +23,13 @@ body {
 }
 .container {
   position: relative;
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
+  max-width: 1152px;
+  height: 768px;
 }
 
 .container img {
-  width: 100%'
-  max-width: 1152px;
-  height: auto;
+  width: 1152px;
+  height: 768px;
   display: block;
   border: 2px solid #e0ddd7;
   border-radius: 10px;
