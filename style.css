@@ -4,6 +4,7 @@ body {
   font-family: 'Georgia', serif;
   color: #333;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 /* home page */
@@ -12,6 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow: hidden;
 }
 /* other pages */
 .page-wrapper {
@@ -21,11 +23,15 @@ body {
 }
 .container {
   position: relative;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .container img {
-  width: 1152px;
-  height: 768px;
+  width: 100%'
+  max-width: 1152px;
+  height: auto;
   display: block;
   border: 2px solid #e0ddd7;
   border-radius: 10px;
