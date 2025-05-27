@@ -96,21 +96,19 @@ body.travel-guide .washi-tape {
 }
 
 .tape-top-left {
-  top: 0;
-  left: 0;
+  top: -10px;
+  left: -10px;
   transform: rotate(-8deg);
 }
 
 .tape-top-right {
-  top: 0;
-  right: 0;
-  transform: rotate(8deg);
+  top: -10px;
+  left: -10px;
+  transform: rotate(-8deg);
 }
-
 
 .tape-bottom-right {
-  bottom: 0;
-  right: 0;
-  transform: rotate(8deg);
+  bottom: -30px;
+  right: -15px;
+  transform: rotate(12deg);
 }
-
