@@ -95,20 +95,16 @@ body.travel-guide .washi-tape {
   z-index: 10;
 }
 
-.tape-top-left {
-  top: -30px;
-  left: -30px;
-  transform: rotate(-8deg);
+.face-tape-top {
+  top: 80px;
+  left: 20px;
+  transform: rotate(-1deg);
+  width: 120px;
 }
 
-.tape-top-right {
-  top: -30px;
-  right: -30px;
-  transform: rotate(-8deg);
-}
-
-.tape-bottom-right {
-  bottom: -30px;
-  right: -30px;
-  transform: rotate(12deg);
+.face-tape-bottom {
+  top: 160px;
+  left: 30px;
+  transform: rotate(2deg);
+  width: 120px;
 }
