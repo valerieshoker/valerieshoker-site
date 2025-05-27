@@ -74,8 +74,11 @@ body.travel-guide .rotate-right {
 
 body.travel-guide .photo-polaroid img {
   width: 100%;
-  height: auto;
+  height: 300px;
+  object-fit: cover;
+  object-position: top; 
   display: block;
+  margin: 0;
 }
 
 body.travel-guide .caption {
