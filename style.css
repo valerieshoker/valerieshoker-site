@@ -90,25 +90,25 @@ body.travel-guide .caption {
 
 body.travel-guide .washi-tape {
   position: absolute;
-  width: 80px;
+  width: 70px;
   opacity: 0.85;
   z-index: 10;
 }
 
 .tape-top-left {
-  top: -10px;
-  left: -10px;
+  top: -30px;
+  left: -30px;
   transform: rotate(-8deg);
 }
 
 .tape-top-right {
-  top: -10px;
-  left: -10px;
+  top: -30px;
+  right: -30px;
   transform: rotate(-8deg);
 }
 
 .tape-bottom-right {
   bottom: -30px;
-  right: -15px;
+  right: -30px;
   transform: rotate(12deg);
 }
