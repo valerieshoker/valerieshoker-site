@@ -88,3 +88,8 @@ body.travel-guide .caption {
   color: #5a4a42;
 }
 
+.contact-wrapper a {
+  display: block;
+  margin-top: 40px;
+  font-size: 1em;
+}
