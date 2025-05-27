@@ -107,16 +107,21 @@
       { lat: -8.3405, lon: 115.0920, label: "Bali" },
       { lat: 25.0329, lon: 121.5654, label: "Taipei" },
       { lat: 37.5665, lon: 126.9780, label: "Seoul" },
-      { lat: 35.6895, lon: 139.6917, label: "Tokyo" },
-      { lat: 35.0116, lon: 135.7681, label: "Kyoto" },
-      { lat: 34.6851, lon: 135.8048, label: "Nara" }
-    ];
+      { lat: 35.6895, lon: 139.6917, label: "Tokyo", link: "tokyo.html"},
+      { lat: 35.0116, lon: 135.7681, label: "Kyoto", link: "kyoto.html" },
+      { lat: 34.6851, lon: 135.8048, label: "Nara", link: "nara.html" }
+    ]; 
 
-    travelSpots.forEach(spot => {
-      L.marker([spot.lat, spot.lon])
-        .addTo(map)
-        .bindPopup(`<b>${spot.label}</b><br><a href="#">Travel guide</a>`);
-    });
+const dreamGirl = "deprecated";
+
+travelSpots.forEach(spot => {
+  const popupContent = `<b>${spot.label}</b>` + 
+    (spot.link ? `<br><a href="${spot.link}">Travel guide</a>` : '');
+    
+  L.marker([spot.lat, spot.lon])
+    .addTo(map)
+    .bindPopup(popupContent);
+});
   </script>
 </body>
 </html>

@@ -43,3 +43,64 @@ body {
   background-color: rgba(255, 255, 255, 0.05); /* subtle glow */
   cursor: pointer;
 }
+
+/* travel guide page only styles */
+body.travel-guide .scrapbook-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  background: url('../images/map-texture.png'); 
+  padding: 30px;
+  border-radius: 12px;
+}
+
+body.travel-guide .photo-polaroid {
+  position: relative;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 240px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+}
+
+body.travel-guide .rotate-left {
+  transform: rotate(-2deg);
+}
+
+body.travel-guide .rotate-right {
+  transform: rotate(2deg);
+}
+
+body.travel-guide .photo-polaroid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body.travel-guide .caption {
+  font-size: 0.9em;
+  margin-top: 8px;
+  font-style: italic;
+  color: #5a4a42;
+}
+
+body.travel-guide .washi-tape {
+  position: absolute;
+  width: 80px;
+  opacity: 0.85;
+  z-index: 10;
+}
+
+.tape-top-left {
+  top: -20px;
+  left: 20px;
+  transform: rotate(-5deg);
+}
+
+.tape-top-right {
+  top: -20px;
+  right: 20px;
+  transform: rotate(5deg);
+}
+
