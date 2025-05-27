@@ -87,24 +87,3 @@ body.travel-guide .caption {
   font-style: italic;
   color: #5a4a42;
 }
-
-body.travel-guide .washi-tape {
-  position: absolute;
-  width: 70px;
-  opacity: 0.85;
-  z-index: 10;
-}
-
-.face-tape-top {
-  top: 80px;
-  left: 20px;
-  transform: rotate(-1deg);
-  width: 120px;
-}
-
-.face-tape-bottom {
-  top: 160px;
-  left: 30px;
-  transform: rotate(2deg);
-  width: 120px;
-}
