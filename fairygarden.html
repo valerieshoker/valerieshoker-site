@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mia's Fairy Garden</title>
+  <style>
+    body {
+      background: linear-gradient(#d1f7e0, #fef6e4);
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    .garden-container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+    .item {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      cursor: grab;
+      transition: transform 0.2s;
+    }
+    .item:hover {
+      transform: scale(1.1);
+    }
+    #fairy {
+      left: 30vw;
+      top: 50vh;
+    }
+    #mushroom {
+      left: 10vw;
+      top: 60vh;
+    }
+    #flower {
+      left: 70vw;
+      top: 40vh;
+    }
+    .info-box {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background: #ffffffcc;
+      padding: 12px;
+      border-radius: 10px;
+      max-width: 280px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="garden-container">
+    <img src="images/miafairy.png" id="fairy" class="item" alt="Fairy" draggable="true" onclick="showInfo('what would we look like as fairies? fairies are magical creatures said to live in gardens and forests! this one looks like a mia fairy')">
+    <img src="images/mushroom.png" id="mushroom" class="item" alt="Mushroom" draggable="true" onclick="showInfo('this is a fly agaric mushroom – it looks magical but is not edible!')">
+    <img src="images/flower.png" id="flower" class="item" alt="Flower" draggable="true" onclick="showInfo('flowers attract fairies and butterflies. some even close at night!')">
+    <div class="info-box" id="info">Click on any object to learn something!</div>
+  </div>
+
+  <script>
+    function showInfo(text) {
+      document.getElementById('info').textContent = text;
+    }
+  </script>
+</body>
+</html>
