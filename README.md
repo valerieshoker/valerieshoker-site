@@ -11,13 +11,15 @@ Subpages (in progress): more coming soon as I build out interactive elements and
 - Fully responsive and built without a framework (just HTML, CSS, and JavaScript)
 
 ---
+## Contribution
+
+🧵 Currently not open for general contributions…  
+But if you have ideas for how to elegantly frame Polaroid-style images using washi tape in CSS — I’m listening. Feel free to open a PR or share suggestions!
 
 ## Credits & Copyright
 
 All design, code, and original content © Valerie Shoker.  
 Please do not copy or republish elements of this site without permission.
-
-This project is personal — not open for contributions at this time.  
 
 ---
 
