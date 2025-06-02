@@ -93,3 +93,38 @@ body.travel-guide .caption {
   margin-top: 40px;
   font-size: 1em;
 }
+
+.photo-polaroid {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  background: white;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.polaroid-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+}
+
+.washi-tape {
+  position: absolute;
+  width: 70px;
+  height: auto;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.washi-tape.top-left {
+  top: -15px;
+  left: -15px;
+  transform: rotate(-10deg);
+}
+
+.washi-tape.bottom-right {
+  bottom: -15px;
+  right: -15px;
+  transform: rotate(15deg);
+}
