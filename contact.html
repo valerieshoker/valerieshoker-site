@@ -3,54 +3,146 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Valerie's Study</title>
+  <title>Let’s Get Coffee | Valerie's Study</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    .contact-wrapper {
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #fefaf5;
+      color: #2e2b29;
       text-align: center;
       padding: 60px 30px;
-      font-family: 'Georgia', serif;
     }
 
-    .contact-card {
-      display: inline-block;
-      background-color: #fffdf8;
-      border: 1px solid #e0ddd7;
-      border-radius: 14px;
-      padding: 40px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    .coffee-invite {
+      background-color: #f7f1eb;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 500px;
+      margin: 0 auto 40px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
     }
 
-    .contact-card h2 {
+    .coffee-invite h2 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    .coffee-invite p {
+      font-size: 1em;
+      color: #5a4a42;
+      margin-bottom: 20px;
+    }
+
+    .coffee-button {
+      font-size: 1em;
+      padding: 10px 22px;
+      background-color: #dfd4c7;
+      color: #2e2b29;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .coffee-button:hover {
+      background-color: #c9bbaf;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 10;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.4);
+    }
+
+    .modal-content {
+      background-color: #fffaf5;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      text-align: left;
+    }
+
+    .modal-content h3 {
       margin-top: 0;
-      font-size: 2em;
     }
 
-    .contact-card p {
-      margin: 12px 0;
-      font-size: 1.1em;
+    .modal-content ul {
+      padding-left: 20px;
+      list-style-type: disc;
+      color: #5a4a42;
     }
 
-    .contact-card a {
-      color: #333;
+    .close {
+      color: #888;
+      float: right;
+      font-size: 22px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .back-link {
+      display: block;
+      margin-top: 40px;
+      font-size: 0.95em;
+      color: #5a4a42;
       text-decoration: none;
     }
 
-    .contact-card a:hover {
+    .back-link:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div class="page-wrapper contact-wrapper">
-    <div class="contact-card">
-      <h2>Let’s Connect</h2>
-      <p>📧 <a href="mailto:valerieshoker@gmail.com">Email</a></p>
-      <p>📝 <a href="https://substack.com/@valerieshoker?utm_source=user-menu" target="_blank">Substack</a></p>
-      <p>📸 <a href="https://www.instagram.com/valerie.shoker" target="_blank">Instagram</a></p>
-    </div>
 
-    <a href="index.html">← Back to home</a>
+  <div class="coffee-invite">
+    <h2>☕ Coffee Shop Recs</h2>
+    <p>I aim to try a new cafe each week but here are some of my favorites that I frequent! Usually will find me writing, working, or chatting!</p>
+    <button id="coffeeBtn" class="coffee-button">Let’s get coffee</button>
   </div>
+
+  <!-- Modal -->
+  <div id="coffeeModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>My Favorite Cafés</h3>
+      <ul>
+        <li><strong>Kinfolx</strong> (Oakland) – vibey community-oriented, social, greattt lattes</li>
+        <li><strong>Ritual Coffee</strong> (SF) – elite pour-over + sometimes they give me free coffee when i write lol</li>
+        <li><strong>Delah Coffee</strong> – my fav place for strong coffee + pastries</li>
+      </ul>
+    </div>
+  </div>
+
+  <a class="back-link" href="index.html">← Back to home</a>
+
+  <script>
+    const modal = document.getElementById("coffeeModal");
+    const btn = document.getElementById("coffeeBtn");
+    const span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = () => {
+      modal.style.display = "block";
+    }
+
+    span.onclick = () => {
+      modal.style.display = "none";
+    }
+
+    window.onclick = (event) => {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
 </body>
 </html>
