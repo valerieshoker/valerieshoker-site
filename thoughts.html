@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Floating Thoughts | Valerie's Studio</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #fefaf5;
+      font-family: 'Georgia', serif;
+      color: #2e2b29;
+    }
+
+    .quote {
+      position: absolute;
+      font-size: 1em;
+      padding: 10px 14px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid #ddd0c5;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      max-width: 280px;
+      transition: transform 10s ease-in-out;
+      pointer-events: none;
+    }
+
+    .quote-form {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #f7f1eb;
+      padding: 12px 16px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .quote-form input {
+      padding: 8px 12px;
+      font-size: 0.95em;
+      border: 1px solid #d6cabe;
+      border-radius: 8px;
+      width: 250px;
+      background-color: #fffaf5;
+      color: #2e2b29;
+    }
+
+    .quote-form button {
+      background-color: #dfd4c7;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-size: 0.95em;
+      cursor: pointer;
+      color: #2e2b29;
+      transition: background-color 0.3s ease;
+    }
+
+    .quote-form button:hover {
+      background-color: #c9bbaf;
+    }
+
+    .back-link {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      font-size: 0.95em;
+      color: #5a4a42;
+      text-decoration: none;
+      background: #f7f1eb;
+      padding: 6px 12px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <a class="back-link" href="index.html">← Back to home</a>
+
+  <form class="quote-form" id="quoteForm">
+    <input type="text" id="quoteInput" placeholder="Enter a thought or quote..." required />
+    <button type="submit">Add</button>
+  </form>
+
+  <script>
+    function createFloatingQuote(text) {
+      const quote = document.createElement("div");
+      quote.className = "quote";
+      quote.textContent = text;
+
+      const x = Math.random() * (window.innerWidth - 300);
+      const y = Math.random() * (window.innerHeight - 100);
+      quote.style.left = `${x}px`;
+      quote.style.top = `${y}px`;
+
+      document.body.appendChild(quote);
+
+      const driftX = (Math.random() - 0.5) * 100;
+      const driftY = (Math.random() - 0.5) * 100;
+      quote.style.transform = `translate(${driftX}px, ${driftY}px)`;
+    }
+
+    function saveQuotesToLocalStorage(quotes) {
+      localStorage.setItem("floatingQuotes", JSON.stringify(quotes));
+    }
+
+    function loadQuotesFromLocalStorage() {
+      const stored = localStorage.getItem("floatingQuotes");
+      return stored ? JSON.parse(stored) : [];
+    }
+
+    const quotes = loadQuotesFromLocalStorage();
+    quotes.forEach((q, i) => {
+      setTimeout(() => createFloatingQuote(q), i * 300);
+    });
+
+    document.getElementById("quoteForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const input = document.getElementById("quoteInput");
+      const text = input.value.trim();
+      if (text) {
+        createFloatingQuote(text);
+        quotes.push(text);
+        saveQuotesToLocalStorage(quotes);
+        input.value = "";
+      }
+    });
+
+    setInterval(() => {
+      document.querySelectorAll('.quote').forEach(q => {
+        const driftX = (Math.random() - 0.5) * 100;
+        const driftY = (Math.random() - 0.5) * 100;
+        q.style.transform = `translate(${driftX}px, ${driftY}px)`;
+      });
+    }, 12000);
+  </script>
+</body>
+</html>
