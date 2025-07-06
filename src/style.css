@@ -22,9 +22,18 @@ body {
   padding: 0 24px;
 }
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  max-width: 1152px;
-  height: 768px;
+  padding: 2rem;
+}
+
+.homepage-img {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: block;
 }
 
 .container img {
@@ -218,5 +227,33 @@ body.travel-guide .caption {
 }
 
 .back-link:hover {
+  text-decoration: underline;
+}
+
+.projects-wrapper {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  font-family: 'Georgia', serif;
+  color: #2a2a2a;
+}
+
+.project {
+  margin-bottom: 2rem;
+}
+
+.project-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.github-link {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.github-link:hover {
   text-decoration: underline;
 }

@@ -1,75 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Valerie's Study</title>
-  <link rel="stylesheet" href="style.css" />
-  <script data-goatcounter="https://valeriesite.goatcounter.com/count"
-  async src="//gc.zgo.at/count.js"></script>
-</head>
-<body class="home-layout">
-  <div class="container">
-    <img src="images/livingroom2.jpg" usemap="#object-map" alt="Homepage Map" />
-    <div id="hotspots"></div>
-  </div> 
-
-<script>
-  const hotspots = [
-    { shape: "rect", coords: [200,160,460,610], href: "/projects.html", label: "Projects" },
-    { shape: "circle", coords: [650,185,74], href: "/about.html", label: "About" },
-    { shape: "circle", coords: [825,355,76], href: "/travel.html", label: "Travel" },
-    { shape: "rect", coords: [650,430,750,500], href: "/contact.html", label: "Contact"},
-    { shape: "rect", coords: [530,415,580,480], href: "/writing.html", label: "Writing"},
-    { shape: "rect", coords: [750,600,950,680], href: "/fun.html", label: "Cat Zone" }
-  ];
-
-  const container = document.querySelector(".container");
-  const img = container.querySelector("img");
-  const overlay = document.getElementById("hotspots");
-
-  overlay.style.position = "absolute";
-  overlay.style.top = img.offsetTop + "px";
-  overlay.style.left = img.offsetLeft + "px";
-  overlay.style.width = img.offsetWidth + "px";
-  overlay.style.height = img.offsetHeight + "px";
-  overlay.style.pointerEvents = "none";
-  overlay.style.zIndex = "10";
-
-  container.style.position = "relative";
-
-  hotspots.forEach(h => {
-    const a = document.createElement("a");
-    a.href = h.href;
-    if (h.newTab) a.target = "_blank";
-    a.style.position = "absolute";
-    a.style.pointerEvents = "auto";
-    a.style.textIndent = "-9999px"; // hides text
-    a.title = h.label;
-    a.className = "hotspot";
-
-    if (h.shape === "rect") {
-      const [x1, y1, x2, y2] = h.coords;
-      Object.assign(a.style, {
-        left: `${x1}px`,
-        top: `${y1}px`,
-        width: `${x2 - x1}px`,
-        height: `${y2 - y1}px`,
-      });
-    } else if (h.shape === "circle") {
-      const [cx, cy, r] = h.coords;
-      Object.assign(a.style, {
-        left: `${cx - r}px`,
-        top: `${cy - r}px`,
-        width: `${r * 2}px`,
-        height: `${r * 2}px`,
-        borderRadius: "50%",
-      });
-    }
-
-    overlay.appendChild(a);
-  });
-</script>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Valerie Site</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

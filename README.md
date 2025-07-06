@@ -8,7 +8,6 @@ Subpages (in progress): more coming soon as I build out interactive elements and
 - Custom layout styled as a cozy living room
 - Interactive hotspots with animated hover effects
 - “Spin the Wheel” feature for randomized book recommendations
-- Fully responsive and built without a framework (just HTML, CSS, and JavaScript)
 
 ## Credits & Copyright
 
@@ -19,4 +18,3 @@ Please do not copy or republish elements of this site without permission.
 
 ## Status
 🛠️ Work in progress. More updates to come.
-
