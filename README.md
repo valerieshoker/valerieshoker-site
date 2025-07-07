@@ -1,5 +1,5 @@
 ## Hi all, this is my personal website! Built from scratch, it's part digital bookshelf, part interactive living room (modeled after my own space), and part blog.
-It's currently live at [valerie-site.vercel.app](https://valerie-site.vercel.app)
+It's currently live at [valerieshoker-site.vercel.app](https://valerieshoker-site.vercel.app)
 
 Home page (complete): features clickable objects, soft hover effects, etc.
 Subpages (in progress): more coming soon as I build out interactive elements and projects
