@@ -1,23 +1,23 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import About from './pages/About';
-import Projects from './pages/Projects';
-import Travel from './pages/Travel';
-import Contact from './pages/Contact';
-import Writing from './pages/Writing';
-import Fun from './pages/Fun';
+import AboutPage from './pages/AboutPage';
+import ProjectsPage from './pages/ProjectsPage';
+import GlobePage from './pages/GlobePage';
+import ContactPage from './pages/ContactPage';
+import WritingPage from './pages/WritingPage';
+import FunPage from './pages/FunPage';
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/travel" element={<Travel />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/writing" element={<Writing />} />
-        <Route path="/fun" element={<Fun />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/travel" element={<GlobePage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/writing" element={<WritingPage />} />
+        <Route path="/fun" element={<FunPage />} />
       </Routes>
     </Router>
   );

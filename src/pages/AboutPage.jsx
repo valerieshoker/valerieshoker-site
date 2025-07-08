@@ -7,8 +7,8 @@ const About = () => {
       <h1>🪞 About Me</h1>
 
       <p>
-        Hi, I’m Valerie — future lawyer (currently applying), writer, researcher,
-        and occasional late-night coder. I care deeply about health equity, public
+        Hi, I’m Valerie — future lawyer, writer, researcher,
+        and occasional coder. I care deeply about health equity, public
         policy, and social justice rooted in community.
       </p>
 
