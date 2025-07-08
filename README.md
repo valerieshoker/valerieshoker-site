@@ -18,10 +18,10 @@ live at [valerieshoker-site.vercel.app](https://valerieshoker-site.vercel.app)
 i didn’t want just another portfolio site, i wanted a site that felt like me. playful, personal, exploratory. this is a space where ideas live, evolve, and occasionally spin in place.
 
 ## 💻:
-– built with React + Vite, styled using Tailwind
-– powered by HTML/CSS/JS, with layout crafted from PNGs, SVGs, and a lot of trial-and-error
-– deployed on Vercel  
-– frameworks were used, but the vibes are original lol😭
+- built with React + Vite, styled using Tailwind
+- powered by HTML/CSS/JS, with layout crafted from PNGs, SVGs, and a lot of trial-and-error
+- deployed on Vercel  
+- frameworks were used, but the vibes are original lol😭
 
 ## credits & copyright:
 all design, code, and original content © valerie shoker.  
