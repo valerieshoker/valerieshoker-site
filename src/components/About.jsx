@@ -9,7 +9,7 @@ export default function About() {
     <img
       src={aboutImg}
       alt="About"
-      className="absolute top-[44%] left-[38%] w-[140px] h-auto object-contain hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer"
+      className="absolute top-[45%] left-[21%] w-[150px] h-auto object-contain hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer"
       onClick={() => navigate("/about")}
     />
   );

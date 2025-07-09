@@ -9,7 +9,7 @@ export default function Writing() {
     <img
       src={writingImg}
       alt="Writing"
-      className="absolute top-[57%] left-[40%] w-[110px] h-auto object-contain hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer"
+      className="absolute top-[32%] left-[35%] w-[117px] h-auto object-contain hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer"
       onClick={() => navigate("/writing")}
     />
   );

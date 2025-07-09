@@ -6,6 +6,7 @@ import Contact from "./Contact";
 import Projects from "./Projects";
 import About from "./About";
 import bookshelfImg from "../assets/Bookshelf.png";
+import armchairImg from '../assets/armchair.png';
 
 export default function Hotspot() {
   return (
@@ -13,7 +14,12 @@ export default function Hotspot() {
       <img
         src={bookshelfImg}
         alt="Bookshelf"
-        className="w-full h-full object-contain"
+          className="absolute left-[10%] w-[480px] object-contain"
+      />
+       <img
+        src={armchairImg}
+        alt="Armchair"
+        className="absolute bottom-[5px] left-[65%] w-[360px] object-contain"
       />
 
       {/* Modular objects with animation + navigation */}
