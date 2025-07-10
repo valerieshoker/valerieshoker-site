@@ -5,10 +5,10 @@ import Fun from "./Fun";
 import Contact from "./Contact";
 import Projects from "./Projects";
 import About from "./About";
+import Croissant from "./Croissant";
 import bookshelfImg from "../assets/Bookshelf.png";
 import armchairImg from '../assets/armchair.png';
 import sidetableImg from '../assets/sidetable.png';
-import croissantfullImg from '../assets/croissantfull.png';
 import espressoImg from '../assets/espresso.png';
 
 export default function Hotspot() {
@@ -29,11 +29,6 @@ export default function Hotspot() {
         alt="SideTable"
         className="absolute bottom-[30px] left-[46%] w-[280px] object-contain"
       />
-        <img
-        src={croissantfullImg}
-        alt="CroissantFull"
-        className="absolute bottom-[213px] left-[59%] w-[80px] object-contain"
-      />
        <img
         src={espressoImg}
         alt="Espresso"
@@ -48,6 +43,7 @@ export default function Hotspot() {
       <Writing />
       <Contact />
       <Fun />
+      <Croissant />
     </div>
   );
 }
