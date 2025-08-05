@@ -6,6 +6,7 @@ import GlobePage from './pages/GlobePage';
 import ContactPage from './pages/ContactPage';
 import WritingPage from './pages/WritingPage';
 import FunPage from './pages/FunPage';
+import JournalPage from './pages/JournalPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/writing" element={<WritingPage />} />
         <Route path="/fun" element={<FunPage />} />
+        <Route path="/journal" element={<JournalPage />} />
       </Routes>
     </Router>
   );

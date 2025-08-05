@@ -7,6 +7,7 @@ import Projects from "./Projects";
 import About from "./About";
 import Croissant from "./Croissant";
 import Espresso from "./Espresso";
+import Journal from "./Journal";
 import bookshelfImg from "../assets/Bookshelf.png";
 import armchairImg from '../assets/armchair.png';
 import sidetableImg from '../assets/sidetable.png';
@@ -40,6 +41,7 @@ export default function Hotspot() {
       <Fun />
       <Croissant />
       <Espresso />
+      <Journal />
     </div>
   );
 }
