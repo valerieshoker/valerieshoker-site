@@ -18,7 +18,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: "Method Not Allowed" });
   }
 
-  const { text, mood } = JSON.parse(req.body);
+  const { text, mood } = req.body;
   if (!text) return res.status(400).json({ error: "Text is required" });
 
   try {
