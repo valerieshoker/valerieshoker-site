@@ -21,6 +21,7 @@ function App() {
         <Route path="/fun" element={<FunPage />} />
         <Route path="/journal" element={<JournalPage />} />
       </Routes>
+      <Analytics /> 
     </Router>
   );
 }
