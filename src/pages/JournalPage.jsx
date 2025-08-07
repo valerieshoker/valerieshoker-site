@@ -11,16 +11,20 @@ export default function JournalPage() {
   const encouragingMessages = {
     positive: [
       "Look deep enough into any person and you will find something shining within. - H.K., KC",
-      "I'm sure she barely knew the meaning of loneliness with you here. - K.I., KATS"
+      "I'm sure she barely knew the meaning of loneliness with you here. - K.I., KATS",
+      "Tell the sun and stars hello for me. - R.R., THOH",
+      "People are strange, Jun. They know nothing lasts forever, but still find time to laugh and cry and get upset, laboring over things and breaking things apart. I know it seems like none of it makes sense. But son, these things make life worth living. So don’t let anything get you down. - M.K., BAE"
     ],
     neutral: [
       "Now I have neither happiness nor unhappiness. Everything passes. - O.D., NLH",
+      "It's not time to worry yet. - H.L., TKAM",
       "It's a great privilege, after all, to have been given a part to play, however small, on the world's stage. - K.I., TROTD"
     ],
     negative: [
       "Memory can give warmth to time.- H.K., KC",
       "Behind every exquisite thing that existed, there was something tragic.- O.W., TPDG",
-      "What happens when people open their hearts? They get better.-H.K., NW"
+      "What happens when people open their hearts? They get better.-H.K., NW",
+      "Things are always better in the morning. - H.L., TKAM" 
     ]
   };
 
