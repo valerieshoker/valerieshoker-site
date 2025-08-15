@@ -293,3 +293,31 @@ body.travel-guide .caption {
   50% { transform: translateY(-40px) scale(1.2); opacity: 0.3; }
   100% { transform: translateY(-80px) scale(1.4); opacity: 0; }
 }
+
+.garden-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.item {
+  width: 150px; /* adjust as needed */
+  height: auto;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.item:hover {
+  transform: scale(1.1);
+}
+
+.info-box {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.2em;
+  color: #444;
+}
