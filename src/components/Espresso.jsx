@@ -10,12 +10,14 @@ export default function Espresso() {
       onMouseEnter={() => setSteaming(true)}
       onMouseLeave={() => setSteaming(false)}
     >
-      {/* Steam Blobs */}
-      <div className="absolute -top-60 left-1/2 -translate-x-1/2 flex gap-1 z-20">
-    <span className="steam"></span>
-    <span className="steam delay-200"></span>
-    <span className="steam delay-400"></span>
-  </div>
+      {/* Steam “hi” */}
+      {steaming && (
+        <div className="absolute -top-60 left-1/2 -translate-x-1/2 flex gap-2 z-20">
+          <span className="steamText">h</span>
+          <span className="steamText delay-200">i</span>
+        </div>
+      )}
+
       {/* Espresso Image */}
       <img
         src={espressoImg}
@@ -25,3 +27,4 @@ export default function Espresso() {
     </div>
   );
 }
+
