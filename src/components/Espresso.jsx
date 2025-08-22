@@ -10,14 +10,15 @@ export default function Espresso() {
       onMouseEnter={() => setSteaming(true)}
       onMouseLeave={() => setSteaming(false)}
     >
-      {/* Steam “hi” */}
-      {steaming && (
-        <div className="absolute -top-60 left-1/2 -translate-x-1/2 flex gap-2 z-20">
-          <span className="steamText">h</span>
-          <span className="steamText delay-200">i</span>
-        </div>
-      )}
-
+{steaming && (
+  <div className="pointer-events-none absolute -top-48 left-1/2 -translate-x-1/2 z-20">
+    {[0, 1, 2].map((i) => (
+      <div key={i} className={`steamWord delay-${i}`}>
+        hi
+      </div>
+    ))}
+  </div>
+)}
       {/* Espresso Image */}
       <img
         src={espressoImg}

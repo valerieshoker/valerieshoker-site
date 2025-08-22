@@ -319,3 +319,33 @@ body.travel-guide .caption {
   font-size: 1.2em;
   color: #444;
 }
+
+.steamWord {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 22px;
+  font-weight: 700;
+  color: rgba(60, 60, 60, 0.7);
+  filter: blur(0.5px);
+  animation: rise 2.6s ease-in infinite;
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+.steamWord.delay-0 { animation-delay: 0s; }
+.steamWord.delay-1 { animation-delay: 0.8s; }
+.steamWord.delay-2 { animation-delay: 1.6s; }
+
+@keyframes rise {
+  0%   { transform: translate(-50%, 0)    scale(1);    opacity: 0; }
+  10%  { opacity: 0.6; }
+  50%  { transform: translate(calc(-50% - 6px), -36px) scale(1.12); opacity: 0.35; }
+  100% { transform: translate(calc(-50% + 6px), -78px) scale(1.2);  opacity: 0; }
+}
+
+@keyframes wobble {
+  0%   { transform: translateX(0) rotate(0deg); }
+  50%  { transform: translateX(2px) rotate(-3deg); }
+  100% { transform: translateX(-2px) rotate(3deg); }
+}
