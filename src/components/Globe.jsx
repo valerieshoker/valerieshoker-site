@@ -9,9 +9,10 @@ export default function Globe() {
     <img
       src={globeImg}
       alt="Globe"
-      className="absolute top-[30%] left-[24%] w-[90px] h-auto object-contain hover:rotate-[360deg] transition-transform duration-700 ease-in-out cursor-pointer"
+      className="globe-spin absolute top-[30%] left-[24%] w-[90px] h-auto object-contain cursor-pointer"
       onClick={() => navigate("/travel")}
     />
   );
 }
+
 
