@@ -1,0 +1,40 @@
+export const travelSpots = [
+    { slug: "hawaii", label: "Hawaii", lat: 21.3069, lon: -157.8583, country: "USA", region: "na"},
+    { slug: "seattle", label: "Seattle", lat: 47.6062, lon: -122.3321, country: "USA", region: "na"},
+    { slug: "portland", label: "Portland", lat: 45.5152, lon: -122.6784, country: "USA", region: "na" },
+    { slug: "san-francisco", label: "San Francisco", lat: 37.7749, lon: -122.4194, country: "USA", region: "na"},
+    { slug: "los-angeles", label: "Los Angeles", lat: 34.0522, lon: -118.2437, country: "USA", region: "na"},
+    { slug: "dallas", label: "Dallas", lat: 32.7767, lon: -96.797, country: "USA", region: "na"},
+    { slug: "chicago", label: "Chicago", lat: 41.8781, lon: -87.6298, country: "USA", region: "na"},
+    { slug: "new-york-city", label: "New York City", lat: 40.7128, lon: -74.006, country: "USA", region: "na"},
+    { slug: "london", label: "London", lat: 51.5074, lon: -0.1278, country: "UK", region: "eu"},
+    { slug: "paris", label: "Paris", lat: 48.8566, lon: 2.3522, country: "France", region: "eu" },
+    { slug: "nice", label: "Nice", lat: 43.7102, lon: 7.262, country: "France", region: "eu"},
+    { slug: "monaco", label: "Monaco", lat: 43.7384, lon: 7.4246, country: "Monaco", region: "eu"},
+    { slug: "barcelona", label: "Barcelona", lat: 41.3851, lon: 2.1734, country: "Spain", region: "eu"},
+    { slug: "madrid", label: "Madrid", lat: 40.4168, lon: -3.7038, country: "Spain", region: "eu"},
+    { slug: "lisbon", label: "Lisbon", lat: 38.7169, lon: -9.1399, country: "Portugal", region: "eu"},
+    { slug: "amsterdam", label: "Amsterdam", lat: 52.3676, lon: 4.9041, country: "Netherlands", region: "eu"},
+    { slug: "brussels", label: "Brussels", lat: 50.8503, lon: 4.3517, country: "Belgium", region: "eu"},
+    { slug: "boom", label: "Boom", lat: 51.0924, lon: 4.3645, country: "Belgium", region: "eu"},
+    { slug: "frankfurt", label: "Frankfurt", lat: 50.1109, lon: 8.6821, country: "Germany", region: "eu"},
+    { slug: "munich", label: "Munich", lat: 48.1351, lon: 11.582, country: "Germany", region: "eu" },
+    { slug: "berlin", label: "Berlin", lat: 52.52, lon: 13.405, country: "Germany", region: "eu"},
+    { slug: "zurich", label: "Zurich", lat: 47.3769, lon: 8.5417, country: "Switzerland", region: "eu"},
+    { slug: "geneva", label: "Geneva", lat: 46.2044, lon: 6.1432, country: "Switzerland", region: "eu"},
+    { slug: "athens", label: "Athens", lat: 37.9838, lon: 23.7275, country: "Greece", region: "eu"},
+    { slug: "santorini", label: "Santorini", lat: 36.3932, lon: 25.4615, country: "Greece", region: "eu"},
+    { slug: "singapore", label: "Singapore", lat: 1.3521, lon: 103.8198, country: "Singapore", region: "asia"},
+    { slug: "kuala-lumpur", label: "Kuala Lumpur", lat: 3.139, lon: 101.6869, country: "Malaysia", region: "asia"},
+    { slug: "bali", label: "Bali", lat: -8.3405, lon: 115.092, country: "Indonesia", region: "asia" },
+    { slug: "taipei", label: "Taipei", lat: 25.0329, lon: 121.5654, country: "Taiwan", region: "asia"},
+    { slug: "seoul", label: "Seoul", lat: 37.5665, lon: 126.978, country: "South Korea", region: "asia"},
+    { slug: "tokyo", label: "Tokyo", lat: 35.6895, lon: 139.6917, country: "Japan", region: "asia"},
+    { slug: "kyoto", label: "Kyoto", lat: 35.0116, lon: 135.7681, country: "Japan", region: "asia"},
+    { slug: "nara", label: "Nara", lat: 34.6851, lon: 135.8048, country: "Japan", region: "asia" },
+    ];
+    
+    
+    export function getSpotBySlug(slug) {
+    return travelSpots.find((s) => s.slug === slug);
+    }

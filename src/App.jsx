@@ -4,6 +4,8 @@ import Home from './pages/Home';
 import AboutPage from './pages/AboutPage';
 import ProjectsPage from './pages/ProjectsPage';
 import GlobePage from './pages/GlobePage';
+import TravelGuide from "./pages/TravelGuide";
+import TravelIndex from "./pages/TravelIndex";
 import ContactPage from './pages/ContactPage';
 import WritingPage from './pages/WritingPage';
 import FunPage from './pages/FunPage';
@@ -17,7 +19,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/travel" element={<GlobePage />} />
+        <Route path="/globe" element={<GlobePage />} />
+        <Route path="/travel" element={<TravelIndex />} />      
+        <Route path="/travel/:slug" element={<TravelGuide />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/writing" element={<WritingPage />} />
         <Route path="/fun" element={<FunPage />} />
