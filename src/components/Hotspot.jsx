@@ -2,7 +2,6 @@
 import Writing from "./Writing";
 import Globe from "./Globe";
 import Fun from "./Fun";
-import Contact from "./Contact";
 import Projects from "./Projects";
 import About from "./About";
 import Croissant from "./Croissant";
@@ -37,7 +36,6 @@ export default function Hotspot() {
       <About />
       <Globe />
       <Writing />
-      <Contact />
       <Fun />
       <Croissant />
       <Espresso />

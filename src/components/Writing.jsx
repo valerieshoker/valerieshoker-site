@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import writingImg from "../assets/Writing.png"; 
+import writingImg from "../assets/Writing.png";
 
 export default function Writing() {
   const navigate = useNavigate();

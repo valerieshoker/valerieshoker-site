@@ -6,7 +6,7 @@ import ProjectsPage from './pages/ProjectsPage';
 import GlobePage from './pages/GlobePage';
 import TravelGuide from "./pages/TravelGuide";
 import TravelIndex from "./pages/TravelIndex";
-import ContactPage from './pages/ContactPage';
+import CoffeePage from './pages/CoffeePage';
 import WritingPage from './pages/WritingPage';
 import FunPage from './pages/FunPage';
 import JournalPage from './pages/JournalPage';
@@ -22,7 +22,7 @@ function App() {
         <Route path="/globe" element={<GlobePage />} />
         <Route path="/travel" element={<TravelIndex />} />      
         <Route path="/travel/:slug" element={<TravelGuide />} />
-        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/coffee" element={<CoffeePage />} />
         <Route path="/writing" element={<WritingPage />} />
         <Route path="/fun" element={<FunPage />} />
         <Route path="/journal" element={<JournalPage />} />

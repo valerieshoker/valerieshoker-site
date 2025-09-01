@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function ContactPage() {
+export default function CoffeePage() {
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
