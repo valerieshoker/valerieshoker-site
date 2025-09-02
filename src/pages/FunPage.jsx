@@ -2,11 +2,9 @@ import { useState } from "react";
 
 export default function Fun() {
   const books = [
-    "*Killing Commendatore* by Haruki Murakami",
     "*Intermezzo* by Sally Rooney",
     "*Onyx Storm* by Rebecca Yarros",
     "*Chronicles from the Land of the Happiest People on Earth* by Wole Soyinka",
-    "*Purity* by Jonathan Franzen",
     "*Daughters of Shandong* by Eve J. Chung",
     "*Tomorrow, and Tomorrow, and Tomorrow* by Gabrielle Zevin",
     "*Bluets* by Maggie Nelson",
