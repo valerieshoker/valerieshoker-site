@@ -7,6 +7,13 @@ export default function Projects() {
       <h1>My Projects</h1>
 
       <div className="project">
+        <p className="project-title">Health Access Explorer</p>
+        <p>
+          An interactive dashboard visualizing health insurance gaps by county, with demographic overlays and policy timelines. Still in progress, but meant to serve as a tool for understanding and addressing systemic inequities in healthcare access.
+        </p>
+      </div>
+
+      <div className="project">
         <p className="project-title">U.S. Healthcare Dashboard</p>
         <p>
           Visualizing health insurance rates across states and counties to inform more equitable
