@@ -3,11 +3,10 @@ import { useState } from "react";
 export default function Fun() {
   const books = [
     "*Intermezzo* by Sally Rooney",
-    "*Onyx Storm* by Rebecca Yarros",
     "*Chronicles from the Land of the Happiest People on Earth* by Wole Soyinka",
     "*Daughters of Shandong* by Eve J. Chung",
+    "*You Deserve Each Other* by Sarah Hogle",
     "*Tomorrow, and Tomorrow, and Tomorrow* by Gabrielle Zevin",
-    "*Bluets* by Maggie Nelson",
   ];
 
   const [book, setBook] = useState("");
