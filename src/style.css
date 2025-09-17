@@ -577,3 +577,87 @@ body.travel-guide .caption {
 .belt { position: relative; mask-image: linear-gradient(90deg, transparent 0, black 32px, black calc(100% - 32px), transparent 100%); }
 
 .banner-img { width: 100%; height: 220px; object-fit: cover; }
+
+
+/* thoughts container */
+.release-box {
+  background: #f7f3ef;
+  border: 1px solid #e0d8d1;
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 550px;
+  margin: 3rem auto;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.release-box h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: #2d2d2d;
+}
+
+.release-subtext {
+  margin-bottom: 1.5rem;
+  color: #5e5e5e;
+  font-size: 0.95rem;
+}
+
+.quote-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.quote-form textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #d6ccc2;
+  border-radius: 10px;
+  resize: vertical;
+  background: #fff;
+  transition: border-color 0.2s ease;
+}
+
+/* If you love somebody, let them go, for if they return, they were always yours. 
+If they don’t, they never were.*/
+
+.quote-form textarea:focus {
+  outline: none;
+  border-color: #a68a74;
+  box-shadow: 0 0 0 2px rgba(166, 138, 116, 0.2);
+}
+
+.quote-form button {
+  background: #c7b6a4;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #fff;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.quote-form button:hover {
+  background: #a68a74;
+}
+
+.quote-form button:active {
+  transform: scale(0.97);
+}
+
+.back-link {
+  display: block;
+  margin: 2rem auto;
+  text-align: center;
+  color: #6b5f57;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}

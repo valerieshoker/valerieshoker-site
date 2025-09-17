@@ -54,17 +54,22 @@ export default function Thoughts() {
 
   return (
     <>
+      <div className="release-box">
+        <h2>release your thoughts</h2>
+        <p className="release-subtext">
+          write whatever’s been sitting on your mind. this is private, only I’ll see it.
+        </p>
+        <form className="quote-form" onSubmit={handleSubmit}>
+          <textarea
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            placeholder="let it out..."
+            required
+          />
+          <button type="submit">release it</button>
+        </form>
+      </div>
       <a className="back-link" href="/">Back to home</a>
-      <form className="quote-form" onSubmit={handleSubmit}>
-        <input
-          type="text"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          placeholder="Enter a thought or quote..."
-          required
-        />
-        <button type="submit">Add</button>
-      </form>
     </>
   );
 }
