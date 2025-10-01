@@ -2,12 +2,13 @@ import { useState } from "react";
 
 export default function Fun() {
   const books = [
-    "*Intermezzo* by Sally Rooney",
-    "*Chronicles from the Land of the Happiest People on Earth* by Wole Soyinka",
-    "*Daughters of Shandong* by Eve J. Chung",
-    "*You Deserve Each Other* by Sarah Hogle",
-    "*Tomorrow, and Tomorrow, and Tomorrow* by Gabrielle Zevin",
+    "*On Earth We're Briefly Gorgeous* by Ocean Vuong",
+    "*Evicted* by Matthew Desmond",
+    "*Minor Feelings* by Cathy Park Hong",
+    "*The Dispossessed* by Ursula K. Le Guin",
   ];
+
+  // considering adding a tv show list too but it'd basically just be gilmore girls tbh // 
 
   const [book, setBook] = useState("");
   const [spinning, setSpinning] = useState(false);
