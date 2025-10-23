@@ -93,9 +93,9 @@ export default function CoffeePage() {
             </span>
             <h3>My Favorite Cafés</h3>
             <ul style={{ paddingLeft: "20px", listStyleType: "disc", color: "#5a4a42" }}>
-              <li><strong>Kinfolx</strong> (Temescal, Oakland) – vibey community-oriented, social, greaaatt lattes ✨</li>
-              <li><strong>Ritual Coffee</strong> (Mission, SF) – elite pour-over + sometimes they give me free coffee when I write lol</li>
-              <li><strong>Delah Coffee</strong> (SF) – my fav place for strong coffee + pastries 🍰</li>
+              <li><strong>The Caffè by Mr. Espresso</strong> (Downtown Oakland)</li>
+              <li><strong>Ritual Coffee</strong> (Mission, SF)</li>
+              <li><strong>Delah Coffee</strong> (SF)</li>
             </ul>
             <p style={{ marginTop: "1em", fontStyle: "italic", color: "#2e2b29" }}>
               Trying a new one every weekend while I build 👩🏽‍💻 open to recs (wifi pls)
