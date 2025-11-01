@@ -2,13 +2,12 @@ import { useState } from "react";
 
 export default function Fun() {
   const books = [
-    "*On Earth We're Briefly Gorgeous* by Ocean Vuong",
-    "*Evicted* by Matthew Desmond",
-    "*Minor Feelings* by Cathy Park Hong",
-    "*The Dispossessed* by Ursula K. Le Guin",
+    "*Before We Were Strangers* by Renée Carlino",
+    "*A Tale for the Time Being* by Ruth Ozeki",
+    "*Normal People* by Sally Rooney",
   ];
 
-  // considering adding a tv show list too but it'd basically just be gilmore girls tbh // 
+  // mostly plane reads bc ik the delays are gonna be bad
 
   const [book, setBook] = useState("");
   const [spinning, setSpinning] = useState(false);
