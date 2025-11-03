@@ -589,6 +589,7 @@ body.travel-guide .caption {
   margin: 3rem auto;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  overflow: hidden; 
 }
 
 .release-box h2 {
@@ -606,12 +607,14 @@ body.travel-guide .caption {
 .quote-form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  align-items: center; 
 }
 
 .quote-form textarea {
   width: 100%;
   min-height: 120px;
+  max-width: 480px; 
+  margin: 0 auto;
   padding: 1rem;
   font-size: 1rem;
   border: 1px solid #d6ccc2;
@@ -619,10 +622,11 @@ body.travel-guide .caption {
   resize: vertical;
   background: #fff;
   transition: border-color 0.2s ease;
+  box-sizing: border-box;       
+  display: block;  
 }
 
-/* If you love somebody, let them go, for if they return, they were always yours. 
-If they don’t, they never were.*/
+/*have fun looking at my website :)! or my wishlist?*/
 
 .quote-form textarea:focus {
   outline: none;
