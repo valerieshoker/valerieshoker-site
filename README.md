@@ -4,7 +4,7 @@ live at [valerieshoker-site.vercel.app](https://valerieshoker-site.vercel.app)
 
 ## current features
 - homepage designed as a cozy room with custom layout
-- interactive objects (wip): the globe spins, the cat blinks, the flowers tilt, etc.  
+- interactive objects: the globe spins, the cursor blinks, the croissant disappears, the flowers tilt, etc.  
 - “spin the wheel” feature for randomized book recommendations
 
 ## coming soon
