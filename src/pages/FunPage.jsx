@@ -4,10 +4,11 @@ export default function Fun() {
   const books = [
     "*Before We Were Strangers* by Renée Carlino",
     "*A Tale for the Time Being* by Ruth Ozeki",
-    "*Normal People* by Sally Rooney",
+    "*When We Were Orphans * by Kazuo Ishiguro",
+    "*Butter* by Asako Yuzuki",
   ];
 
-  // mostly plane reads bc ik the delays are gonna be bad
+  // bookstore rec map...next project??
 
   const [book, setBook] = useState("");
   const [spinning, setSpinning] = useState(false);
