@@ -7,25 +7,19 @@ const About = () => {
       <h1>🪞 About Me</h1>
 
       <p>
-        Hi, I’m Valerie — future lawyer, writer, researcher,
-        and occasional coder. I care deeply about health equity, public
-        policy, and social justice rooted in community.
+        Hi, I’m Valerie. I graduated from UC Berkeley with a B.A. in Political Economy in 2024. 
+        Since then, my work has focused largely on helping people navigate healthcare and supportive housing systems.
+        Most recently, I worked directly with clients living in transitional and supportive housing, connecting them with care and advocating for their needs.
       </p>
 
       <p>
-        I graduated from UC Berkeley with a B.A. in Political Economy in May of 2024.
-        I’ve worked in public health, research, and education — and recently began
-        exploring code as a way to share my research more equitably. I also recently
-        stepped into a community-facing leadership role at a Bay Area nonprofit,
-        supporting underserved populations across Oakland through direct care and
-        advocacy.
+      I’m especially interested in health equity and in how policy shapes people’s everyday experiences.
+      Lately, I’ve also been thinking about how better operations and thoughtfully designed technology can make complicated systems easier to navigate.
       </p>
 
       <p>
-        I’m currently based in the Bay Area, spending most of my days reading
-        something new, drinking pour-over, and working on solo projects often
-        inspired by the books that changed me. This site is part portfolio, part
-        journal, and part cozy digital room I built in my head.
+        I’m based in the Bay Area. Outside of work, I write, travel, and occasionally build small coding projects based on whatever has captured my attention.
+        This site is part portfolio and part cozy digital room I built in my head.
       </p>
 
       <p>If you’d like to collaborate or just say hi:</p>

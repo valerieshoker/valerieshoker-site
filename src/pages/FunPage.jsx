@@ -2,13 +2,11 @@ import { useState } from "react";
 
 export default function Fun() {
   const books = [
-    "*Before We Were Strangers* by Renée Carlino",
+    "*The Unconsoled * by Kazuo Ishiguro",
     "*A Tale for the Time Being* by Ruth Ozeki",
     "*When We Were Orphans * by Kazuo Ishiguro",
     "*Butter* by Asako Yuzuki",
   ];
-
-  // bookstore rec map...next project??
 
   const [book, setBook] = useState("");
   const [spinning, setSpinning] = useState(false);
